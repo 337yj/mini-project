@@ -34,21 +34,21 @@
   const $map = get("#map");
   const geoLocationButton = get(".geolocation_button");
 
-  const mapContainer = new kakao.maps.Map($map, {
+  const mapContainer = new window.kakao.maps.Map($map, {
     center: new kakao.maps.LatLng(defaultPos.lat, defaultPos.lng),
     level: 3,
   });
 
   const createMarkerImage = () => {
     let markerImageSrc = "assets/marker.png";
-    let imageSize = new kakao.maps.Size(45, 48);
+    let imageSize = new window.kakao.maps.Size(45, 48);
     return new kakao.maps.MarkerImage(markerImageSrc, imageSize);
   };
 
   const createMarker = (lat, lng) => {
-    const marker = new kakao.maps.Marker({
+    const marker = new window.kakao.maps.Marker({
       map: mapContainer,
-      position: new kakao.maps.LatLng(lat, lng),
+      position: new window.kakao.maps.LatLng(lat, lng),
       image: createMarkerImage(),
     });
     return marker;
@@ -58,7 +58,7 @@
     cafes.map((cafe) => {
       const { lat, lng } = cafe;
       const marker = createMarker(lat, lng);
-      const infowindow = new kakao.maps.InfoWindow({
+      const infowindow = new window.kakao.maps.InfoWindow({
         content: `<div style="width:150px;text-align:center;padding:6px 2px;">
                   <a href="https://place.map.kakao.com/${cafe.id}" target="_blank">${cafe.name}</a>
                 </div>`,
@@ -70,7 +70,7 @@
 
   const successGeolocation = (position) => {
     const { latitude, longitude } = position.coords;
-    mapContainer.setCenter(new kakao.maps.LatLng(latitude, longitude));
+    mapContainer.setCenter(new window.kakao.maps.LatLng(latitude, longitude));
     const marker = createMarker(latitude, longitude);
     marker.setMap(mapContainer);
   };
