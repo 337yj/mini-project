@@ -1,0 +1,54 @@
+{
+  "videoInfoList": [
+    {
+      "id": 1,
+      "webpImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "jpgImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "profile": "./public/assets/JJungProfile.jpg",
+      "title": "벚꽃놀이",
+      "name": "JJung",
+      "view": "2.7M views",
+      "update": "1 months ago"
+    },
+    {
+      "id": 2,
+      "webpImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "jpgImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "profile": "./public/assets/JJungProfile.jpg",
+      "title": "cherry blossoms",
+      "name": "JJung",
+      "view": "3.1M views",
+      "update": "2 months ago"
+    },
+    {
+      "id": 3,
+      "webpImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "jpgImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "profile": "./public/assets/channiProfile.jpg",
+      "title": "부산 벚꽃축제",
+      "name": "Channi",
+      "view": "1.8M views",
+      "update": "4 months ago"
+    },
+    {
+      "id": 4,
+      "webpImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "jpgImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "profile": "./public/assets/channiProfile.jpg",
+      "title": "여행을 떠나요 버스킹",
+      "name": "Channi",
+      "view": "5.2M views",
+      "update": "7 months ago"
+    },
+    {
+      "id": 5,
+      "webpImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "jpgImgSrc": "./public/assets/벚꽃놀이.jpg",
+      "profile": "./public/assets/JJungProfile.jpg",
+      "title": "체리블라썸",
+      "name": "JJung",
+      "view": "1.7M views",
+      "update": "1 years ago"
+    }
+  ]
+}
