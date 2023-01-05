@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #f5f6f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+}
+
+.container .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .logo h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.container .contents {
+  padding: 50px;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.form-con {
+  margin: 0 auto;
+  width: 460px;
+  font-size: 14px;
+}
+
+.form-con .terms-check-all {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.form-con .terms-check-all label {
+  margin-left: 3px;
+  text-decoration: underline;
+}
+
+.terms-list .terms-box {
+  margin: 20px 0;
+}
+
+.contents label {
+  font-weight: 700;
+}
+
+label.required::after {
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #00c75a;
+  content: "(필수)";
+}
+
+.terms-list .terms-con {
+  height: 88px;
+  overflow: auto;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #dadada;
+  background: #fff;
+  font-size: 12px;
+}
+
+.confirmBtn {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #00df64, #03d8bc);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.confirmBtn:hover:enabled {
+  background-image: linear-gradient(to right, #01ba54, #00b59d);
+}
+
+.confirmBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 280px;
+    padding: 20px;
+  }
+
+  .form-con {
+    max-width: 460px;
+    width: auto;
+  }
+}
